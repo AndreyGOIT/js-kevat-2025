@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>DOM Scripting</h2>
+<p>Näytetään Asiakkaan nimi omassa p-tägissään</p>
+<p id="AsiakkaanNimi"></p>
+    <div style="padding: 1rem; min-height: 150px; " id="page">
+        <center>
+            <marquee behavior="alternate">My page</marquee>
+            <button onclick="sayHello()">Say Hello</button>
+            <button onclick="whoAmI()">Who am I?</button>
+            <button onclick="mySkills()">My skills</button>
+
+            <button id="ref_btn">References</button>
+
+            <button onclick="dark()">Dark theme</button>
+            <button onclick="light()">Light theme</button>
+            <button onclick="night()">Night theme</button>
+    
+            <div id="root"></div>
+        </center>
+    </div>
+    <script src="Nav.js"></script>
+    <script src="Theme.js"></script>
+    <script>
+        var Asiakas = "Juha Kähkönen"; // Double quotes
+        document.getElementById("AsiakkaanNimi").innerHTML = Asiakas
+        </script>
+</body>
+</html>
