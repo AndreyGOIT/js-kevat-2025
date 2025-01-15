@@ -18,7 +18,7 @@ const asiakkaat = [
         ika: 20
     }
 ]
-//asiakkaat[0].puhelin = "1234567890"
+asiakkaat[0].puhelin = "1234567890"
 asiakkaat.push({
     id: 4,
     nimi: "Mikko",
